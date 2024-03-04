@@ -97,12 +97,14 @@ public class App
                 } case 9: {
                     try{
                         int i = 0;
-                        System.out.println(gifu.getCourse(i).getInformation());
-                        ArrayList<Enrollment> returnEnrollments = gifu.getEnrollments(gifu.getCourse(i));
-                        for(Enrollment x : returnEnrollments){
-                            System.out.println(x.getStudent().getInformation() + ", grade: " + x.getGrade());
+                        while(true){
+                            System.out.println(gifu.getCourse(i).getInformation());
+                            ArrayList<Enrollment> returnEnrollments = gifu.getEnrollments(gifu.getCourse(i));
+                            for(Enrollment x : returnEnrollments){
+                                System.out.println(x.getStudent().getInformation() + ", grade: " + x.getGrade());
+                            }
+                            i++;
                         }
-                        i++;
                     }catch(Exception E){}
                     break;
                 } case 0: {
