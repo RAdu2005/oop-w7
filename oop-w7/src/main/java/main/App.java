@@ -28,17 +28,17 @@ public class App
                     System.out.println("Enter the course ID:");
                     String id = sc.nextLine();
 
-                    System.out.println("Enter the maximum number of student:");
+                    System.out.println("Enter the maximum number of students:");
                     int maxNumberOfStudents = Integer.parseInt(sc.nextLine());
 
                     Course course = new Course(name, id, maxNumberOfStudents);
                     gifu.addCourse(course);
                     break;
                 } case 2: {
-                    System.out.println("Enter the name of the student:");
+                    System.out.println("Enter the student name:");
                     String name = sc.nextLine();
 
-                    System.out.println("Enter the student ID:");
+                    System.out.println("Enter the student number:");
                     String id = sc.nextLine();
 
                     Student student = new Student(name, id);
