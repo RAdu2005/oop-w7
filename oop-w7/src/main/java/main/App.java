@@ -93,6 +93,7 @@ public class App
                     for(Enrollment x: returnEnrollments){
                         System.out.println(x.getCourse().getInformation() + ", grade: " + x.getGrade());
                     }
+                    break;
                 } case 9: {
                     try{
                         int i = 0;
