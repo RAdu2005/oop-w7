@@ -88,7 +88,7 @@ public class App
                     System.out.println("Which student's grades you want to see? Provide the number of the student:");
                     int studentId = Integer.parseInt(sc.nextLine());
 
-                    System.out.println("Student " + gifu.getStudent(studentId).getInformation() + ":");
+                    System.out.println("Student " + gifu.getStudent(studentId).getInformation() + " grades:");
                     ArrayList<Enrollment> returnEnrollments = gifu.getEnrollments(gifu.getStudent(studentId));
                     for(Enrollment x: returnEnrollments){
                         System.out.println(x.getCourse().getInformation() + ", grade: " + x.getGrade());

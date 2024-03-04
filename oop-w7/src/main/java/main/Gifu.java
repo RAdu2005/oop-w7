@@ -68,7 +68,6 @@ public class Gifu {
    public ArrayList<Enrollment> getEnrollments(Student student){
         ArrayList<Enrollment> returnEnrollments = new ArrayList<>();    
 
-        System.out.println("Student " + student.getInformation() + " grades:");
         for(Enrollment x : enrollments){
             if(x.getStudent() == student){
                 returnEnrollments.add(x);
