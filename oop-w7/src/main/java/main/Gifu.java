@@ -28,8 +28,8 @@ public class Gifu {
         int i = 0;
         for(Course x : courses){
             System.out.println(Integer.toString(i) + ") " + x.getInformation());
+            i++;
         }
-        i++;
    }
 
    public void addStudent(Student student){
@@ -44,8 +44,8 @@ public class Gifu {
         int i = 0;
         for(Student x : students){
             System.out.println(Integer.toString(i) + ") " + x.getInformation());
+            i++;
         }
-        i++;
    }
 
    public void enrollStudent(Student student, Course course){
